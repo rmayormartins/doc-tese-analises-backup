@@ -1,0 +1,219 @@
+#-----------------------------------------------------#
+#--------------------------Vulnerabilidade social-----------------------#
+#-----------------------------------------------------#
+#todos_low_ses_22e23
+c1_todos_low_ses <- c(3, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 3, 1, 2, 1, 2, 1, 1, 0, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 3, 1, 2, 2, 3, 1, 1, 1, 1, 3, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 2, 1, 2, 3, 1, 1, 3, 3, 3, 3, 1, 1, 2, 1, 3, 3, 1, 2, 2, 2, 3, 1, 3, 3, 3, 2, 2, 1, 2, 1, 2, 1, 2, 3, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 3, 2, 1, 1, 2, 2, 3, 1, 2, 3, 2, 1, 2, 2, 2, 1, 3, 3, 1, 3, 3, 1, 1, 1, 1, 1, 1, 1)
+c2_todos_low_ses <- c(3, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 3, 3, 2, 0, 1, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 1, 2, 2, 2, 3, 2, 2, 3, 3, 3, 2, 2, 3, 2, 1, 1, 3, 1, 2, 2, 3, 2, 3, 3, 3, 2, 2, 2, 3, 2, 3, 1, 3, 3, 2, 2, 2, 2, 2, 3, 2, 2, 3, 3, 2, 3, 3, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 3, 2, 2, 3, 3, 3, 2, 3, 2, 2, 2, 3, 2, 2, 3)
+c3_todos_low_ses <- c(3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 3, 2, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+c4_todos_low_ses <- c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)
+c5_todos_low_ses <- c(3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 1, 3, 1, 3, 3, 3, 3, 0, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 0, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+c6_todos_low_ses <- c(1, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 1, 3, 1, 3, 3, 3, 1, 3, 3, 3, 3, 0, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 0, 0, 0, 0, 3, 3, 1, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+c7_todos_low_ses <- c(0, 1, 2, 2, 1, 3, 3, 0, 2, 1, 1, 2, 1, 2, 1, 1, 1, 3, 1, 1, 3, 2, 1, 1, 1, 1, 3, 1, 3, 1, 1, 1, 2, 2, 0, 3, 0, 3, 1, 3, 1, 2, 3, 2, 3, 3, 3, 1, 2, 1, 1, 3, 1, 0, 0, 0, 0, 0, 1, 3, 2, 1, 1, 3, 3, 1, 1, 3, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 3, 1, 2, 2, 1, 3, 1, 1, 1, 3, 3, 3, 1, 1, 3, 2, 1, 1, 1, 1, 2, 3, 3, 2, 1, 3, 1, 3, 2, 3, 1, 2, 1, 3, 0, 2, 1, 3, 1, 0, 3, 1, 1, 1, 1, 2, 1, 2, 3, 1, 1, 3)
+c8_todos_low_ses <- c(0, 3, 3, 3, 3, 3, 3, 0, 1, 3, 3, 3, 3, 1, 1, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 0, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 0, 0, 0, 0, 0, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3)
+c9_todos_low_ses <- c(0, 1, 1, 2, 0, 0, 1, 0, 2, 2, 3, 2, 2, 2, 1, 2, 2, 1, 1, 2, 1, 2, 3, 1, 2, 2, 3, 3, 3, 3, 2, 0, 1, 3, 0, 3, 0, 1, 1, 1, 0, 0, 2, 1, 3, 0, 0, 2, 2, 3, 2, 3, 2, 0, 0, 0, 2, 0, 1, 1, 2, 2, 2, 1, 2, 3, 2, 2, 3, 3, 2, 2, 3, 3, 1, 2, 2, 1, 0, 2, 3, 2, 2, 3, 3, 2, 3, 2, 2, 3, 2, 3, 3, 3, 1, 3, 1, 2, 1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 1, 2, 2, 3, 2, 2, 1, 0, 3, 3, 1, 3, 3, 3, 3, 2, 1, 3, 3, 3, 3, 2, 2, 3, 1)
+c10_todos_low_ses <- c(2, 2, 3, 2, 3, 3, 2, 0, 3, 3, 2, 2, 2, 1, 3, 2, 3, 2, 3, 2, 2, 2, 3, 1, 2, 2, 0, 3, 3, 3, 2, 2, 2, 3, 0, 2, 0, 2, 2, 2, 3, 0, 0, 2, 2, 0, 0, 1, 1, 3, 1, 3, 2, 0, 0, 0, 2, 0, 2, 2, 3, 0, 2, 2, 3, 3, 1, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 0, 2, 3, 3, 2, 3, 2, 2, 2, 2, 3, 3, 3, 2, 2, 3, 2, 3, 2, 2, 1, 0, 1, 2, 2, 2, 1, 2, 2, 3, 3, 2, 2, 2, 3, 1, 2, 2, 0, 3, 2, 2, 3, 3, 2, 2, 3, 3, 2, 3, 2, 3, 2, 1, 2, 2)
+c11_todos_low_ses <- c(3, 1, 3, 1, 3, 3, 3, 0, 3, 1, 1, 3, 3, 3, 1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 1, 0, 1, 3, 3, 1, 1, 3, 3, 0, 3, 0, 1, 3, 3, 3, 0, 0, 3, 3, 0, 0, 1, 3, 3, 1, 3, 3, 0, 0, 0, 1, 0, 3, 1, 3, 0, 3, 3, 3, 3, 3, 3, 1, 1, 1, 3, 3, 1, 3, 1, 3, 1, 0, 3, 3, 1, 1, 3, 1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1, 1, 1, 0, 1, 3, 3, 1, 3, 1, 1, 3, 3, 3, 1, 3, 3, 1, 1, 3, 0, 3, 3, 1, 3, 1, 3, 3, 3, 3, 1, 3, 1, 3, 1, 3, 1, 3)
+c12_todos_low_ses <- c(1, 3, 3, 3, 3, 1, 3, 0, 3, 3, 3, 1, 1, 3, 1, 3, 1, 3, 3, 1, 1, 1, 3, 1, 3, 1, 0, 3, 3, 3, 1, 3, 3, 3, 0, 3, 0, 3, 3, 3, 3, 0, 0, 3, 3, 0, 0, 3, 1, 3, 1, 3, 1, 0, 0, 0, 3, 0, 1, 3, 1, 0, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 3, 0, 3, 1, 1, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 0, 1, 3, 1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3)
+
+for (i in 1:12) {
+  vetor_nome <- paste0("c", i, "_todos_low_ses")
+  tamanho <- length(get(vetor_nome))
+  cat("O tamanho de", vetor_nome, "é", tamanho, "\n")
+}
+
+#tira os zeros
+for (i in 1:12) {
+  # Cria o nome do vetor
+  vetor_nome <- paste0("c", i, "_todos_low_ses")
+  # Obtém o vetor
+  vetor_atual <- get(vetor_nome)
+  # Filtra para remover os zeros
+  vetor_atual <- vetor_atual[vetor_atual != 0]
+  # Atribui o vetor filtrado de volta à variável
+  assign(vetor_nome, vetor_atual)
+  # Imprime o tamanho do vetor atualizado
+  tamanho <- length(vetor_atual)
+  cat("O tamanho de", vetor_nome, "após remover os zeros é", tamanho, "\n")
+}
+
+for (i in 1:12) {
+  vetor_nome <- paste0("c", i, "_todos_low_ses")
+  tamanho <- length(get(vetor_nome))
+  cat("O tamanho de", vetor_nome, "é", tamanho, "\n")
+}
+
+#calculo de quantos 1, 2 e 3 tem:
+# Contar a frequência dos números 1, 2 e 3 para cada vetor
+for (i in 1:12) {
+  # Cria o nome do vetor
+  vetor_nome <- paste0("c", i, "_todos_low_ses")
+  # Obtém o vetor
+  vetor_atual <- get(vetor_nome)
+  # Conta a frequência dos números
+  contagem <- table(vetor_atual)
+  # Imprime a contagem
+  cat("Contagem para", vetor_nome, ":\n")
+  print(contagem)
+  cat("\n")
+}
+
+
+#calcular a mediana para cada criterio
+mediana_resultados <- c()
+
+for (i in 1:12) {
+  vetor_nome <- paste0("c", i, "_todos_low_ses")
+  vetor_atual <- get(vetor_nome)
+  mediana <- median(vetor_atual)
+  mediana_resultados <- c(mediana_resultados, mediana)
+  cat("A mediana de", vetor_nome, "é", mediana, "\n")
+}
+
+#NOTA 0-10 cada criterio
+# Lista dos sufixos de colunas
+sufixos <- paste0("c", 1:12, "_todos_low_ses")
+
+# Inicialize um data.frame vazio para armazenar os resultados
+results <- data.frame()
+
+# Loop por todos os sufixos
+for(sufixo in sufixos){
+  
+  # Extrair a variável
+  data <- get(sufixo)
+  
+  # Calcular média ponderada
+  divisor <- (sum(data == 3) * 3) + (sum(data == 2) * 2) + (sum(data == 1) * 1)
+  dividendo <- length(data) * 3
+  media_ponderada <- divisor / dividendo
+  
+  # Adicionar ao data.frame de resultados
+  results <- rbind(results, data.frame(criterio = sufixo, media_ponderada = media_ponderada * 10))
+}
+
+# Mostrar os resultados
+print(results)
+
+# Gráfico das médias ponderadas
+library(ggplot2)
+
+# Converter criterio em fator ordenado
+results$criterio <- factor(results$criterio, levels = paste0("c", 1:12, "_todos_low_ses"))
+
+# Criar um gráfico de barras das médias ponderadas
+ggplot(results, aes(x = criterio, y = media_ponderada, fill = criterio)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_text(aes(label = round(media_ponderada, 2)), vjust = -0.3, position = position_dodge(0.9), size = 3) +
+  labs(title = "Média Ponderada por Critério", x = "Critério", y = "Média Ponderada (0-10)") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+#-----------------------------------------------------#
+#--------------------------Geral-----------------------#
+#-----------------------------------------------------#
+#todos geral
+c1_todos_geral <- c(3, 0, 3, 3, 3, 1, 1, 3, 3, 0, 0, 1, 1, 1, 0, 1, 3, 0, 0, 1, 0, 2, 2, 2, 0, 2, 0, 3, 3, 3, 3, 2, 1, 0, 1, 3, 0, 1, 1, 1, 3, 3, 0, 2, 3, 1, 3, 0, 3, 1, 3, 1, 0, 1, 2, 2, 3, 0, 3, 2, 3, 3, 2, 1, 1, 1, 2, 1, 3, 1, 3, 2, 3, 2, 3, 3, 3)
+c2_todos_geral <- c(3, 0, 3, 2, 3, 2, 2, 3, 3, 0, 0, 2, 2, 3, 0, 3, 2, 0, 0, 2, 0, 3, 2, 2, 0, 2, 0, 3, 3, 3, 3, 3, 2, 0, 3, 3, 0, 2, 2, 2, 2, 3, 0, 2, 3, 3, 3, 0, 3, 3, 3, 1, 0, 3, 2, 3, 3, 0, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 3, 2, 3, 2, 3, 3, 3, 3, 3)
+c3_todos_geral <- c(3, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3, 0, 3, 3, 0, 0, 3, 0, 3, 3, 3, 0, 3, 0, 2, 3, 3, 3, 3, 3, 0, 3, 3, 0, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+c4_todos_geral <- c(2, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 0, 2, 2, 0, 0, 2, 0, 2, 3, 3, 0, 3, 0, 2, 2, 2, 2, 3, 2, 0, 3, 2, 0, 2, 3, 3, 2, 2, 0, 3, 2, 3, 2, 0, 2, 2, 2, 2, 0, 3, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)
+c5_todos_geral <- c(3, 1, 3, 3, 0, 3, 0, 0, 3, 3, 0, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 1, 3, 0, 3, 3, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+c6_todos_geral <- c(3, 3, 3, 1, 0, 3, 0, 0, 1, 3, 0, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 0, 3, 3, 1, 3, 0, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 1, 3, 0, 1, 3, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+c7_todos_geral <- c(2, 0, 1, 1, 0, 2, 0, 0, 1, 0, 1, 3, 3, 3, 2, 2, 3, 3, 0, 1, 2, 2, 3, 3, 1, 3, 0, 2, 3, 3, 3, 3, 3, 0, 1, 3, 3, 2, 2, 1, 2, 0, 2, 0, 1, 0, 0, 2, 3, 3, 3, 1, 3, 3, 3, 3, 2, 3, 1, 3, 3, 1, 3, 1, 3, 1, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 2)
+c8_todos_geral <- c(3, 0, 1, 1, 0, 3, 0, 0, 1, 0, 1, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 1, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 1, 3, 0, 3, 0, 3, 0, 0, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1, 3, 3, 3, 3, 3, 3)
+c9_todos_geral <- c(1, 0, 3, 2, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, 3, 2, 3, 2, 1, 2, 2, 2, 3, 3, 2, 3, 2, 2, 2, 2, 3, 3, 2, 2, 1, 2, 2, 1, 1, 2, 1, 0, 2, 1, 2, 2, 3, 2, 3, 2, 3, 2, 2, 3, 2, 0, 2, 3, 2, 3, 3, 1, 2, 2, 1, 2, 3, 3, 1, 2, 1, 3, 3, 2, 1, 2, 3)
+c10_todos_geral <- c(3, 3, 3, 3, 0, 3, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 2, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3)
+c11_todos_geral <- c(1, 1, 3, 3, 0, 1, 0, 0, 1, 1, 3, 1, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 3, 1, 1, 3, 1, 1, 3, 1, 0, 3, 3, 1, 3, 3, 1, 3, 3, 3, 1, 1, 3, 3, 0, 1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 1, 3, 3, 1, 1, 3, 1, 3, 3, 3, 0, 3, 3, 3, 3, 0, 3, 3, 3, 1, 1, 3)
+c12_todos_geral <- c(1, 3, 3, 3, 0, 3, 0, 0, 1, 3, 3, 1, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 1, 1, 1, 1, 3, 1, 3, 1, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 0, 1, 1, 1, 1, 3, 1, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 0, 3, 3, 1, 3, 0, 3, 3, 3, 3, 3, 3)
+
+for (i in 1:12) {
+  vetor_nome <- paste0("c", i, "_todos_geral")
+  tamanho <- length(get(vetor_nome))
+  cat("O tamanho de", vetor_nome, "é", tamanho, "\n")
+}
+
+
+#tira os zeros
+for (i in 1:12) {
+  # Cria o nome do vetor
+  vetor_nome <- paste0("c", i, "_todos_geral")
+  # Obtém o vetor
+  vetor_atual <- get(vetor_nome)
+  # Filtra para remover os zeros
+  vetor_atual <- vetor_atual[vetor_atual != 0]
+  # Atribui o vetor filtrado de volta à variável
+  assign(vetor_nome, vetor_atual)
+  # Imprime o tamanho do vetor atualizado
+  tamanho <- length(vetor_atual)
+  cat("O tamanho de", vetor_nome, "após remover os zeros é", tamanho, "\n")
+}
+
+
+for (i in 1:12) {
+  vetor_nome <- paste0("c", i, "_todos_geral")
+  tamanho <- length(get(vetor_nome))
+  cat("O tamanho de", vetor_nome, "é", tamanho, "\n")
+}
+
+#calculo de quantos 1, 2 e 3 tem:
+# Contar a frequência dos números 1, 2 e 3 para cada vetor
+for (i in 1:12) {
+  # Cria o nome do vetor
+  vetor_nome <- paste0("c", i, "_todos_geral")
+  # Obtém o vetor
+  vetor_atual <- get(vetor_nome)
+  # Conta a frequência dos números
+  contagem <- table(vetor_atual)
+  # Imprime a contagem
+  cat("Contagem para", vetor_nome, ":\n")
+  print(contagem)
+  cat("\n")
+}
+
+
+
+#calcular a mediana para cada criterio
+mediana_resultados <- c()
+
+for (i in 1:12) {
+  vetor_nome <- paste0("c", i, "_todos_geral")
+  vetor_atual <- get(vetor_nome)
+  mediana <- median(vetor_atual)
+  mediana_resultados <- c(mediana_resultados, mediana)
+  cat("A mediana de", vetor_nome, "é", mediana, "\n")
+}
+
+#NOTA 0-10 cada criterio
+# Lista dos sufixos de colunas
+sufixos <- paste0("c", 1:12, "_todos_geral")
+
+# Inicialize um data.frame vazio para armazenar os resultados
+results <- data.frame()
+
+# Loop por todos os sufixos
+for(sufixo in sufixos){
+  
+  # Extrair a variável
+  data <- get(sufixo)
+  
+  # Calcular média ponderada
+  divisor <- (sum(data == 3) * 3) + (sum(data == 2) * 2) + (sum(data == 1) * 1)
+  dividendo <- length(data) * 3
+  media_ponderada <- divisor / dividendo
+  
+  # Adicionar ao data.frame de resultados
+  results <- rbind(results, data.frame(criterio = sufixo, media_ponderada = media_ponderada * 10))
+}
+
+# Mostrar os resultados
+print(results)
+
+# Gráfico das médias ponderadas
+library(ggplot2)
+
+# Converter criterio em fator ordenado
+results$criterio <- factor(results$criterio, levels = paste0("c", 1:12, "_todos_geral"))
+
+# Criar um gráfico de barras das médias ponderadas
+ggplot(results, aes(x = criterio, y = media_ponderada, fill = criterio)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_text(aes(label = round(media_ponderada, 2)), vjust = -0.3, position = position_dodge(0.9), size = 3) +
+  labs(title = "Média Ponderada por Critério", x = "Critério", y = "Média Ponderada (0-10)") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
